@@ -1,0 +1,6 @@
+C:\gh\Interview1\Interview1\bin\Debug\Interview1.exe.config
+C:\gh\Interview1\Interview1\bin\Debug\Interview1.exe
+C:\gh\Interview1\Interview1\bin\Debug\Interview1.pdb
+C:\gh\Interview1\Interview1\obj\Debug\Interview1.csprojResolveAssemblyReference.cache
+C:\gh\Interview1\Interview1\obj\Debug\Interview1.exe
+C:\gh\Interview1\Interview1\obj\Debug\Interview1.pdb
