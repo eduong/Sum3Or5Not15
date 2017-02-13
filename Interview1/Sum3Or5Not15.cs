@@ -41,7 +41,7 @@ namespace Interview1
             int div5 = n / 5;
             int div15 = n / 15;
 
-            // If you can make SumOfTimes without a loop, then you get constant time
+            // If you can make SumOfSeq without a loop, then you get constant time
             // i.e. is there a function SumOfSeq(3, n) = 3 + 3*2 + 3*3 + 3*4 + ... + 3*n in constant time?
             //
             // With a bit of quick math:
@@ -55,8 +55,7 @@ namespace Interview1
         // Helper
         public static int SumOfSeq(int n, int times)
         {
-            int sumOfSeq = (times * (times + 1)) / 2;
-            return n * sumOfSeq;
+            return n * (times * (times + 1)) / 2;
         }
 
         static void Main(string[] args)
