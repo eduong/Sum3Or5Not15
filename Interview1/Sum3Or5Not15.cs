@@ -14,7 +14,7 @@ namespace Interview1
             return i % 15 != 0 && (i % 3 == 0 || i % 5 == 0); // Not divisible 15 but 3 or 5
         }
 
-        // Solution 1 linear time
+        // Solution 1 recursive linear time
         public static int Sum3Or5Not15Recur(int n)
         {
             // Base case
@@ -22,10 +22,10 @@ namespace Interview1
 
             // Recursive
             if (Is3Or5Not15(n)) return Sum3Or5Not15Recur(n - 1) + n;
-            else return Sum3Or5Not15Recur(n - 1);
+            return Sum3Or5Not15Recur(n - 1);
         }
 
-        // Solution 2 linear time
+        // Solution 2 loop linear time
         public static int Sum3Or5Not15Loop(int n)
         {
             int sum = 0;
@@ -34,6 +34,7 @@ namespace Interview1
             return sum;
         }
 
+        // Solution 3 constant time
         public static int Sum3Or5Not15Alt(int n)
         {
             int div3 = n / 3;
@@ -60,9 +61,9 @@ namespace Interview1
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Sum3Or5Not15Recur(30));
-            Console.WriteLine(Sum3Or5Not15Loop(30));
-            Console.WriteLine(Sum3Or5Not15Alt(30));
+            Console.WriteLine(Sum3Or5Not15Recur(100));
+            Console.WriteLine(Sum3Or5Not15Loop(100));
+            Console.WriteLine(Sum3Or5Not15Alt(100));
         }
     }
 }
